@@ -1,0 +1,81 @@
+
+lekxa@DESKTOP-DC99BV7 MINGW64 ~
+$ cd /d/ZH/
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH
+$ pwd
+/d/ZH
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH
+$ git config --global user.name "Жукова Лилия"
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH
+$ git config --global user.email "liliya.zhukova.2004@mail.ru"
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH
+$ pwd
+/d/ZH
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH
+$ ls
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH
+$ git init
+Initialized empty Git repository in D:/Zh/.git/
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH (master)
+$ ls -a
+./  ../  .git/
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH (master)
+$ git clone ^[[200~D:\GitRepo\tmp\GitTestZhukova~ test
+
+Cloning into 'test'...
+ssh: Could not resolve hostname ^[[200~d: Name or service not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH (master)
+$ git clone D:\GitRepo\tmp\GitTestZhukova~ test
+Cloning into 'test'...
+fatal: 'D:GitRepotmpGitTestZhukova~' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH (master)
+$ git clone D:\GitRepo\tmp\GitTestZhukova~
+Cloning into 'GitRepotmpGitTestZhukova~'...
+warning: You appear to have cloned an empty repository.
+done.
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH (master)
+$ git add Hello.txt
+fatal: pathspec 'Hello.txt' did not match any files
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH (master)
+$ cd /d/ZH/GitRepotmpGitTestZhukova~/
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH/GitRepotmpGitTestZhukova~ (master)
+$ pwd
+/d/ZH/GitRepotmpGitTestZhukova~
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH/GitRepotmpGitTestZhukova~ (master)
+$ git add Hello.txt
+
+lekxa@DESKTOP-DC99BV7 MINGW64 /d/ZH/GitRepotmpGitTestZhukova~ (master)
+$ git commit -m"Hello"
+[master (root-commit) 2a93699] Hello
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hello.txt
